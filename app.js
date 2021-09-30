@@ -30,4 +30,4 @@ app.use('/doctor',doctorRoute);
 app.get('/',(req,res)=>{
  res.send(`<h1>Welcome to the doctor care REST API at ${new Date().toLocaleDateString()}</h1>`)
 })
-app.listen(5000,()=>console.log(`Server Ready from ${port}`))
+app.listen(port,()=>console.log(`Server Ready from ${port}`))
